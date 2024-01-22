@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #f0f0f0;
+    --tertiary-color: #fff;
+    --text-color: #666;
+    --title-color: #333;
+    --footer-color: #fff;
+    --font-size-sm: 0.8em;
+    --font-size-md: 1em;
+    --font-size-lg: 1.2em;
+    --transition-duration: 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-duration);
+}
+
+.poem-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--tertiary-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow var(--transition-duration), background-color var(--transition-duration);
+}
+
+.poem-container:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.poem-container h1 {
+    text-align: center;
+    color: var(--title-color);
+    font-size: var(--font-size-lg);
+    transition: color var(--transition-duration), font-size var(--transition-duration);
+}
+
+.poem-container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: color var(--transition-duration);
+}
+
+.poem-container p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--footer-color);
+    text-align: left;
+    padding: 10px;
+    transition: background-color var(--transition-duration);
+}
+
+footer p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    transition: font-size var(--transition-duration);
+}
+
+footer:hover {
+    background-color: var(--secondary-color);
+}
+
+footer p:hover {
+    font-size: var(--font-size-md);
+}
